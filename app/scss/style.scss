@@ -163,9 +163,10 @@
 
 /*burger*/
 .rightside-menu {
+    z-index: 10;
     position: absolute;
-    transform: translateX(250%);
-    transition: all ease-in-out .6s;
+    transform: translateX(150%);
+    transition: all ease-in-out .7s;
     right: 0;
     top: 0;
     bottom: 0;
@@ -215,5 +216,58 @@
     }
     &__img {
         max-width: 485px;
+    }
+}
+
+/*3 block*/
+.top {
+    &__inner {
+        padding-bottom: 70px;
+        position: relative;
+        &::after { //bg
+            content: '';
+            position: absolute;
+            background-image: url(../images/slider-bg.jpg);
+            width: 100%;
+            height: 722px;
+            z-index: -1;
+            top: 0;
+        }
+    }
+    &__slider-item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    &__slider-img {
+        margin-left: -14%;
+        max-width: 703px;
+        height: 815px;
+        object-fit: cover;
+    }
+    &__slider-info {
+        max-width: 635px;
+        margin-left: 25px;
+    }
+    &__slider-title {
+        color: $title;
+        font-size: 110px;
+        line-height: 135px;
+        @extend %title-font;
+        padding-bottom: 26px;
+        margin-bottom: 26px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 185px;
+            height: 1px;
+            background-color: #979797;
+        }
+    }
+    &__slider-text {
+        max-width: 580px;
     }
 }

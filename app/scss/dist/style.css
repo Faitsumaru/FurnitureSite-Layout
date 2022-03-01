@@ -248,8 +248,8 @@ body {
 /*burger*/
 .rightside-menu {
   position: absolute;
-  transform: translateX(250%);
-  transition: all ease-in-out 0.6s;
+  transform: translateX(150%);
+  transition: all ease-in-out 0.7s;
   right: 0;
   top: 0;
   bottom: 0;
@@ -300,3 +300,5 @@ body {
 .rightside-menu__img {
   max-width: 485px;
 }
+
+/*3 block*/

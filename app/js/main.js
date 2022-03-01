@@ -10,4 +10,17 @@ $(function () {
     closeBtn.on('click', function(){
         burgerMenu.removeClass('--active');
     });
+
+    //slider
+    var slider = $('.top__slider');
+    slider.slick({
+        arrows: false,
+        infinite: true,
+        dots: true,
+        fade: true,
+        cssEase: 'ease-in-out',
+        autoplay: true,
+        autoplaySpeed: 5000
+    });
+
 })
