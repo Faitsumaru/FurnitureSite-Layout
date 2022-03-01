@@ -1,4 +1,4 @@
-.footer__info-title, .menu__list-link {
+.rightside-menu__title, .footer__info-title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -69,6 +69,8 @@ body {
   font-size: 16px;
   line-height: 27px;
   color: #5a5a5a;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
 .wrapper {
@@ -125,7 +127,7 @@ body {
 }
 .menu__list-link:hover {
   color: #F1D152;
-  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
 /*2 block*/
@@ -241,4 +243,60 @@ body {
   color: #A1A1A1;
   text-align: center;
   padding: 42px 0 42px;
+}
+
+/*burger*/
+.rightside-menu {
+  position: absolute;
+  transform: translateX(250%);
+  transition: all ease-in-out 0.6s;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 694px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.4);
+}
+.rightside-menu.--active {
+  transform: translateX(0);
+}
+.rightside-menu__close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 47px 0 0 41px;
+}
+.rightside-menu__content {
+  max-width: 485px;
+  margin: 0 auto;
+  margin-top: 57px;
+}
+.rightside-menu__content img {
+  margin: 0 auto;
+}
+.rightside-menu__title {
+  color: #363838;
+  font-size: 36px;
+  line-height: 51px;
+  text-align: center;
+  margin: 26px 0 17px 0;
+  padding-bottom: 24px;
+  position: relative;
+}
+.rightside-menu__title::after {
+  position: absolute;
+  content: "";
+  width: 252px;
+  height: 1px;
+  background-color: #979797;
+  bottom: 0;
+  right: 23.5%;
+}
+.rightside-menu__text {
+  text-align: center;
+  margin-bottom: 75px;
+}
+.rightside-menu__img {
+  max-width: 485px;
 }

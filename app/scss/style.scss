@@ -38,7 +38,7 @@
         transition: all ease-in .5s;
         &:hover {
             color: #F1D152;
-            text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
         }
     }
 }
@@ -153,11 +153,67 @@
         margin-right: 60px;
         width: 125px;
     }
-    
     &__copyright {
         background-color: $title;
         color: #A1A1A1;
         text-align: center;
         padding: 42px 0 42px;  
+    }
+}
+
+/*burger*/
+.rightside-menu {
+    position: absolute;
+    transform: translateX(250%);
+    transition: all ease-in-out .6s;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 694px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, .4);
+    &.--active {
+        transform: translateX(0);
+    }
+    &__close {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 47px 0 0 41px;
+    }
+    &__content {
+        max-width: 485px;
+        margin: 0 auto;
+        margin-top: 57px;
+        img {
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        color: $title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        text-align: center;
+        margin: 26px 0 17px 0;
+        padding-bottom: 24px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 252px;
+            height: 1px;
+            background-color: #979797;
+            bottom: 0;
+            right: 23.5%;
+        }
+    }
+    &__text {
+        text-align: center;
+        margin-bottom: 75px;
+    }
+    &__img {
+        max-width: 485px;
     }
 }
