@@ -192,14 +192,9 @@
         }
     }
     &__title {
-        color: $title;
-        @extend %title-font;
-        font-size: 36px;
-        line-height: 51px;
-        text-align: center;
+        position: relative;
         margin: 26px 0 17px 0;
         padding-bottom: 24px;
-        position: relative;
         &::after {
             position: absolute;
             content: '';
@@ -269,5 +264,85 @@
     }
     &__slider-text {
         max-width: 580px;
+    }
+}
+
+/*4 block*/
+.collection {
+    &__inner {
+        padding: 0 26px;
+        margin: 46px 0 104px 0;
+    }
+    &__content {
+        max-width: 730px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    &__title {
+        position: relative;
+        margin-bottom: 25px;
+        padding-bottom: 24px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 252px;
+            height: 1px;
+            background-color: #979797;
+            bottom: 0;
+            right: 32.5%;
+        }
+    }
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 29px;
+    }
+    &__gallery-item {
+        position: relative;
+        &:hover {
+            .collection__info {
+                opacity: 1;
+            }
+        }
+    }
+    &__gallery-pic {
+        min-height: 350px;
+        object-fit: cover;
+    }
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transition: all ease-in .5s;
+        background-color: rgba(#fff, .6);
+        opacity: 0;
+        padding: 10px;
+    }
+    &__gallery-title {
+        color: $title;
+        @extend %title-font;
+        font-size: 20px;
+        line-height: 25px;
+        padding-bottom: 19px;
+        margin-bottom: 19px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 1px;
+            background-color: #6D7278;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
     }
 }

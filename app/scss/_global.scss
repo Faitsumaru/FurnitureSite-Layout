@@ -33,6 +33,18 @@ body {
   padding: 0 15px;
 }
 
+a {
+	color: inherit;
+}
+
+h4 {
+	color: $title;
+	@extend %title-font;
+	font-size: 36px;
+	line-height: 51px;
+	text-align: center;
+}
+
 //slider dots
 .slick-dots {
 	display: flex;
