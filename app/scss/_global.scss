@@ -37,6 +37,12 @@ a {
 	color: inherit;
 }
 
+h3 {
+	color: $title;
+	@extend %title-font;
+	font-size: 60px;
+	line-height: 80px;
+}
 h4 {
 	color: $title;
 	@extend %title-font;

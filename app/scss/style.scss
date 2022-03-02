@@ -202,7 +202,9 @@
             height: 1px;
             background-color: #979797;
             bottom: 0;
-            right: 23.5%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
         }
     }
     &__text {
@@ -290,7 +292,9 @@
             height: 1px;
             background-color: #979797;
             bottom: 0;
-            right: 32.5%;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
         }
     }
     &__gallery {
@@ -338,11 +342,38 @@
             position: absolute;
             width: 200px;
             height: 1px;
-            background-color: #6D7278;
+            background-color: #979797;
             bottom: 0;
             left: 0;
             right: 0;
             margin: 0 auto;
+        }
+    }
+}
+
+/*5 block*/
+.decor {
+    background-image: url(../images/decor-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 170px 0 155px;
+    margin-bottom: 80px;
+    &__content {
+        max-width: 540px;
+    }
+    &__title {
+        padding-bottom: 22px;
+        margin-bottom: 21px;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 200px;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #979797;
         }
     }
 }
