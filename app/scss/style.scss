@@ -447,7 +447,7 @@
     }
 }
 
-/*6 block*/
+/*7 block*/
 .gallery {
     padding-bottom: 85px;
     &__buttons {
@@ -501,5 +501,41 @@
             width: 100%;
         }
     }
-    
+}
+
+/*8 block*/
+.blog-box {
+    padding-bottom: 85px;
+    &__title {
+        margin: 0 auto 30px;
+        text-align: center;
+        max-width: 430px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+    &__img-link {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    &__links {
+        margin-bottom: 9px;
+        font-size: 14px;
+        line-height: 28px;
+        color: #707070;
+        font-weight: 600;
+    }
+    &__date,
+    &__author,
+    &__theme {
+        color: inherit;
+    }
+    &__item-title {
+        color: $title;
+        font-size: 24px;
+        line-height: 38px;
+        @extend %title-font;
+    }
 }
