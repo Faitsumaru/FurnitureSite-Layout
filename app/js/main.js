@@ -23,4 +23,11 @@ $(function () {
         autoplaySpeed: 5000
     });
 
+    //gallery
+    var mixer = mixitup('.gallery__inner', {
+        load: {
+            filter: '.category-bedroom' //default active tab
+        }
+    });
+
 })
