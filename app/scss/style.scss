@@ -192,7 +192,7 @@
     max-width: 694px;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0px -10px 10px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
     &.--active {
         transform: translateX(0);
     }
@@ -580,22 +580,16 @@
 }
 
 /*1 block of 'About' page*/
-.breadcrumbs {
-    &__list {
-        display: inline-flex;
-        margin: 14px 0;
-    }
-}
 .about-prev {
     background-image: url(../images/about__prev-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 400px;
     margin-bottom: 100px;
+    margin-top: -55px;
     &__title {
         text-align: center;
-        padding: 105px 0 105px;
+        padding: 160px 0;
     }
 }
 .about-post {
@@ -629,17 +623,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 410px;
+        min-height: 410px;
         margin-bottom: 100px;
-        position: relative;
-    }
-    &__popup-video svg {
-        position: absolute;
-        content: '';
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        margin: auto auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & img {
+            transition: all .6s ease-in;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }

@@ -7,7 +7,7 @@ var _require = require('gulp'),
     parallel = _require.parallel,
     series = _require.series;
 
-var scss = require('gulp-sass');
+var scss = require('gulp-sass')(require('sass'));
 
 var concat = require('gulp-concat');
 
@@ -54,7 +54,7 @@ function images() {
 
 function scripts() {
   //linking js files func
-  return src(['node_modules/jquery/dist/jquery.js', 'node_modules/slick-carousel/slick/slick.js', 'node_modules/mixitup/dist/mixitup.js', 'app/js/main.js']).pipe(concat('main.min.js')).pipe(uglify()).pipe(dest('app/js')).pipe(browserSync.stream());
+  return src(['node_modules/jquery/dist/jquery.js', 'node_modules/slick-carousel/slick/slick.js', 'node_modules/mixitup/dist/mixitup.js', 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js', 'app/js/main.js']).pipe(concat('main.min.js')).pipe(uglify()).pipe(dest('app/js')).pipe(browserSync.stream());
 }
 
 function styles() {

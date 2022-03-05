@@ -1,6 +1,6 @@
 const { src, dest, watch, parallel, series }  = require('gulp');
 
-const scss          = require('gulp-sass');
+const scss          = require('gulp-sass')(require('sass'));
 const concat        = require('gulp-concat');
 const browserSync   = require('browser-sync').create();
 const uglify        = require('gulp-uglify-es').default;
@@ -43,6 +43,7 @@ function scripts() { //linking js files func
     'node_modules/jquery/dist/jquery.js',
     'node_modules/slick-carousel/slick/slick.js',
     'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
