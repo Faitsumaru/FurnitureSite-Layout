@@ -41,6 +41,25 @@
             text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
         }
     }
+    &__list-link--active {
+        padding-bottom: 4px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            border-radius: 1px;
+            background-color: rgba($title, .7);
+            transition: all ease-in-out .35s;
+
+        }
+        &:hover::after {
+            background-color: #F1D152;
+        }
+    }
 }
 
 /*2 block*/
@@ -200,7 +219,7 @@
             content: '';
             width: 252px;
             height: 1px;
-            background-color: #979797;
+            background-color: $title-underline;
             bottom: 0;
             right: 0;
             left: 0;
@@ -216,7 +235,27 @@
     }
 }
 
-/*3 block*/
+.breadcrumbs {
+    background-color: rgba(#DFDFDF, .5);
+    padding: 14px 0;
+    &__list {
+        display: flex;
+    }
+    &__item::after {
+        content: '/';
+        margin-left: -3px;
+        margin-right: 4px;
+    }
+    &__item:last-child::after {
+        content: '';
+    }
+    &__link {
+        font-size: 14px;
+        color: $default;
+    }
+}
+
+/*3 block of 'Home' page*/
 .top {
     &__inner {
         padding-bottom: 70px;
@@ -261,7 +300,7 @@
             bottom: 0;
             width: 185px;
             height: 1px;
-            background-color: #979797;
+            background-color: $title-underline;
         }
     }
     &__slider-text {
@@ -269,7 +308,7 @@
     }
 }
 
-/*4 block*/
+/*4 block of 'Home' page*/
 .collection {
     &__inner {
         padding: 0 26px;
@@ -290,7 +329,7 @@
             content: '';
             width: 252px;
             height: 1px;
-            background-color: #979797;
+            background-color: $title-underline;
             bottom: 0;
             right: 0;
             left: 0;
@@ -342,7 +381,7 @@
             position: absolute;
             width: 200px;
             height: 1px;
-            background-color: #979797;
+            background-color: $title-underline;
             bottom: 0;
             left: 0;
             right: 0;
@@ -351,7 +390,7 @@
     }
 }
 
-/*5 block*/
+/*5 block of 'Home' page*/
 .decor {
     background-image: url(../images/decor-bg.jpg);
     background-repeat: no-repeat;
@@ -373,12 +412,12 @@
             height: 1px;
             bottom: 0;
             left: 0;
-            background-color: #979797;
+            background-color: $title-underline;
         }
     }
 }
 
-/*6 block*/
+/*6 block of 'Home' page*/
 .workpath {
     padding: 80px 0;
     &__title {
@@ -447,7 +486,7 @@
     }
 }
 
-/*7 block*/
+/*7 block of 'Home' page*/
 .gallery {
     padding-bottom: 85px;
     &__buttons {
@@ -503,7 +542,7 @@
     }
 }
 
-/*8 block*/
+/*8 block of 'Home' page*/
 .blog-box {
     padding-bottom: 85px;
     &__title {
@@ -537,5 +576,70 @@
         font-size: 24px;
         line-height: 38px;
         @extend %title-font;
+    }
+}
+
+/*1 block of 'About' page*/
+.breadcrumbs {
+    &__list {
+        display: inline-flex;
+        margin: 14px 0;
+    }
+}
+.about-prev {
+    background-image: url(../images/about__prev-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    margin-bottom: 100px;
+    &__title {
+        text-align: center;
+        padding: 105px 0 105px;
+    }
+}
+.about-post {
+    &__title {
+        text-align: left;
+        padding-bottom: 20px;
+        margin-bottom: 23px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 200px;
+            height: 1px;
+            background-color: $title-underline;
+        }
+    }
+    &__box {
+        max-width: 825px;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+    &__text {
+        &:first-child {
+            padding-bottom: 22px;
+        }
+    }
+    &__popup {
+        background-image: url(../images/about__post-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 410px;
+        margin-bottom: 100px;
+        position: relative;
+    }
+    &__popup-video svg {
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto auto;
     }
 }
