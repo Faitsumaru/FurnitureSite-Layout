@@ -1506,7 +1506,7 @@ h4 {
 
 /*6 block of 'Home' page*/
 .workpath {
-  padding: 80px 0;
+  padding-top: 80px;
 }
 .workpath__title {
   margin-bottom: 40px;
@@ -1573,6 +1573,7 @@ h4 {
 
 /*7 block of 'Home' page*/
 .gallery {
+  padding-top: 80px;
   padding-bottom: 85px;
 }
 .gallery__buttons {
@@ -1802,4 +1803,9 @@ h4 {
 .collection__about-inner {
   padding: 0 26px;
   margin: 40px 0 50px;
+}
+
+/*1 block of 'Gallery' page*/
+.gallery-page .gallery__items {
+  margin-bottom: 26px;
 }
