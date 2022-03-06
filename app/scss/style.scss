@@ -716,3 +716,20 @@
         }
     }
 }
+
+/*3 block of 'About' page*/
+.partners {
+    &__list {
+        margin: 0 50px 10px 50px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 68px;
+        align-items: center;
+    }
+    &__item {
+        transition: all .6s ease-in;
+        &:hover {
+            opacity: .7;
+        }
+    }
+}

@@ -1782,3 +1782,18 @@ h4 {
 .details__progressbar-item:nth-child(4)::after {
   width: 40%;
 }
+
+/*3 block of 'About' page*/
+.partners__list {
+  margin: 0 50px 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 68px;
+  align-items: center;
+}
+.partners__item {
+  transition: all 0.6s ease-in;
+}
+.partners__item:hover {
+  opacity: 0.7;
+}
