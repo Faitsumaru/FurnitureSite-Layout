@@ -238,6 +238,8 @@
 .breadcrumbs {
     background-color: rgba(#DFDFDF, .5);
     padding: 14px 0;
+    position: relative;
+    z-index: 9;
     &__list {
         display: flex;
     }
@@ -747,5 +749,117 @@
 .gallery-page .gallery {
     &__items {
         margin-bottom: 26px;
+    }
+}
+
+/*1 block of 'Contact' page*/
+.map {
+    margin-top: -55px;
+    padding-bottom: 55px;
+}
+.contact-page {
+    .breadcrumbs {
+        background-color: rgba(#DFDFDF, .65);
+    }
+}
+
+.contact {
+    padding-bottom: 85px;
+    &__title {
+        padding-bottom: 24px;
+        margin-bottom: 40px;
+        text-align: left;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: $title-underline;
+        }
+    }
+    &__inner {
+        max-width: 825px;
+        margin-left: auto;
+        margin-bottom: 75px;
+    }
+    &__social-list {
+        display: flex;
+        max-width: 284px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 21px;
+    }
+    &__text {
+        color: #A1A1A1;
+        margin-bottom: 10px;
+    }
+    &__address {
+        color: $default;
+        margin-bottom: 16px;
+    }
+    &__email {
+        font-weight: 600;
+        color: $title;
+        font-size: 14px;
+        padding-left: 30px;
+        display: inline-block;
+        margin-bottom: 24px;
+        position: relative;
+        transition: all ease-in .5s;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/mail-img.svg);
+            left: 0;
+            top: 8px;
+            width: 16px;
+            height: 12px;
+        }
+        &:hover {
+            color: #000;
+            text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    &__slider {
+        &-item {
+            margin-bottom: 30px;
+            margin-left: 10px;
+            position: relative;
+            &:hover {
+                .contact__slider-title {
+                    opacity: 1;
+                }
+            }
+        }
+        &-title {
+            position: absolute;
+            width: 170px;
+            @extend %title-font;
+            color: $title;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            line-height: 22px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(#fff, .6);
+            opacity: 0;
+            padding: 0 5px;
+            transition: all .5s ease-in;
+        }
+        &__slider-img {
+            height: 170px;
+            width: 170px;
+            object-fit: cover;
+        }
+        
     }
 }

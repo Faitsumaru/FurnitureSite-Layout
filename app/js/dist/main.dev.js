@@ -21,7 +21,20 @@ $(function () {
     cssEase: 'ease-in-out',
     autoplay: true,
     autoplaySpeed: 5000
-  }); //gallery
+  }); //slider contact
+
+  var contactSlider = $('.contact__slider');
+  contactSlider.slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    autoplfay: true,
+    autoplaySpeed: 5000,
+    slidesToShow: 10,
+    slidesToScroll: 5
+  });
+  var contactSliderItem = $('.contact__slider-item');
+  contactSliderItem.css('width', '170px'); //gallery
 
   var mixer = mixitup('.gallery__inner', {
     load: {

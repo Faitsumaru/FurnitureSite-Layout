@@ -83,5 +83,50 @@ h4 {
 	}
 }
 
+//form
+.form {
+    &__box {
+        display: flex;
+        margin-bottom: 13px;
+    }
+    input,
+    textarea {
+        width: 407px;
+        color: $default;
+        border: 1px solid #DFDFDF;
+        border-radius: 20px;
+        padding: 6px 17px;
+    }
+    input::placeholder,
+    textarea::placeholder {
+        color: #A1A1A1;
+    }
+    &__name {
+        margin-right: 11px;
+    }
+    textarea {
+        width: 100%;
+        height: 125px;
+        resize: none;
+        margin-bottom: 20px;
+    }
+    &__button {
+        background-color: $title;
+        border: none;
+        border-radius: 21px;
+        color: #FFFFF0;
+        padding: 6px 12px;
+        font-weight: 600;
+        min-width: 180px;
+        cursor: pointer;
+        border: 1px solid $title;
+        transition: all ease-in .5s;
+        &:hover {
+            color: $title;
+            background-color: #F1D152;
+            border: 1px solid $title;
+        }
+    }
+}
 
 

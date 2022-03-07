@@ -1,4 +1,4 @@
-.details__progressbar-item, .blog-box__item-title, .workpath__item-title, .collection__gallery-title, .top__slider-title, .footer__info-title, .menu__list-link, h4, h3 {
+.contact__slider-title, .details__progressbar-item, .blog-box__item-title, .workpath__item-title, .collection__gallery-title, .top__slider-title, .footer__info-title, .menu__list-link, h4, h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -1105,6 +1105,49 @@ h4 {
   background-color: #FFEF35;
 }
 
+.form__box {
+  display: flex;
+  margin-bottom: 13px;
+}
+.form input,
+.form textarea {
+  width: 407px;
+  color: #5a5a5a;
+  border: 1px solid #DFDFDF;
+  border-radius: 20px;
+  padding: 6px 17px;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #A1A1A1;
+}
+.form__name {
+  margin-right: 11px;
+}
+.form textarea {
+  width: 100%;
+  height: 125px;
+  resize: none;
+  margin-bottom: 20px;
+}
+.form__button {
+  background-color: #363838;
+  border: none;
+  border-radius: 21px;
+  color: #FFFFF0;
+  padding: 6px 12px;
+  font-weight: 600;
+  min-width: 180px;
+  cursor: pointer;
+  border: 1px solid #363838;
+  transition: all ease-in 0.5s;
+}
+.form__button:hover {
+  color: #363838;
+  background-color: #F1D152;
+  border: 1px solid #363838;
+}
+
 /*1 block*/
 .header__inner {
   display: flex;
@@ -1333,6 +1376,8 @@ h4 {
 .breadcrumbs {
   background-color: rgba(223, 223, 223, 0.5);
   padding: 14px 0;
+  position: relative;
+  z-index: 9;
 }
 .breadcrumbs__list {
   display: flex;
@@ -1808,4 +1853,108 @@ h4 {
 /*1 block of 'Gallery' page*/
 .gallery-page .gallery__items {
   margin-bottom: 26px;
+}
+
+/*1 block of 'Contact' page*/
+.map {
+  margin-top: -55px;
+  padding-bottom: 55px;
+}
+
+.contact-page .breadcrumbs {
+  background-color: rgba(223, 223, 223, 0.65);
+}
+
+.contact {
+  padding-bottom: 85px;
+}
+.contact__title {
+  padding-bottom: 24px;
+  margin-bottom: 40px;
+  text-align: left;
+  position: relative;
+}
+.contact__title::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #979797;
+}
+.contact__inner {
+  max-width: 825px;
+  margin-left: auto;
+  margin-bottom: 75px;
+}
+.contact__social-list {
+  display: flex;
+  max-width: 284px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.contact__text {
+  color: #A1A1A1;
+  margin-bottom: 10px;
+}
+.contact__address {
+  color: #5a5a5a;
+  margin-bottom: 16px;
+}
+.contact__email {
+  font-weight: 600;
+  color: #363838;
+  font-size: 14px;
+  padding-left: 30px;
+  display: inline-block;
+  margin-bottom: 24px;
+  position: relative;
+  transition: all ease-in 0.5s;
+}
+.contact__email::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/mail-img.svg);
+  left: 0;
+  top: 8px;
+  width: 16px;
+  height: 12px;
+}
+.contact__email:hover {
+  color: #000;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+.contact__slider-item {
+  margin-bottom: 30px;
+  margin-left: 10px;
+  position: relative;
+}
+.contact__slider-item:hover .contact__slider-title {
+  opacity: 1;
+}
+.contact__slider-title {
+  position: absolute;
+  width: 170px;
+  color: #363838;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 22px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  padding: 0 5px;
+  transition: all 0.5s ease-in;
+}
+.contact__slider__slider-img {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
 }
