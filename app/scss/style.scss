@@ -86,7 +86,7 @@
     }
     &__info-text {
         margin-bottom: 16px;
-        max-width: 475px;
+        width: 475px;
     }
     &__info-email {
         font-weight: 600;
@@ -187,7 +187,6 @@
 .rightside-menu {
     z-index: 10;
     position: absolute;
-    transform: translateX(150%);
     transition: all ease-in-out .7s;
     right: 0;
     top: 0;
@@ -196,7 +195,8 @@
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
-    &.--active {
+    transform: translateX(150%);
+    &.rightside-menu--active {
         transform: translateX(0);
     }
     &__close {
@@ -245,11 +245,16 @@
     z-index: 9;
     &__list {
         display: flex;
+        overflow-x: auto;
+    }
+    &__item {
+        position: relative;
+        margin-right: 8px;
+        margin-left: 1px;
     }
     &__item::after {
         content: '/';
-        margin-left: -3px;
-        margin-right: 4px;
+        position: absolute;
     }
     &__item:last-child::after {
         content: '';

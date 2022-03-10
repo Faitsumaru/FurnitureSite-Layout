@@ -1,5 +1,32 @@
 /*Adaptive*/
 
+@media (max-width: 990px) {
+    .footer {
+        &__info {
+            width: 380px;
+        }
+    }
+}
+@media (max-width: 850px) {
+    .footer {
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__info {
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        &__info-text {
+            width: 100%;
+        }
+        &__social,
+        &__menu {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
 @media (max-width: 768px) {
     .header__btn {
         display: none;
@@ -17,9 +44,12 @@
         margin: 0;
     }
 }
+//burger
 @media (max-width: 540px) {
     .logo {
         order: -1;
+        position: relative;
+        z-index: 12;
     }
     .header {
         &__inner {
@@ -34,6 +64,8 @@
             background-color: transparent;
             border: none;
             cursor: pointer;
+            position: relative;
+            z-index: 12;
             span {
                 display: block;
                 background-color: #000;
@@ -44,7 +76,7 @@
                 transition: all .5s ease-out;
             }
         }
-        &__btn-menu:hover {
+        &__btn-menu--active {
             & span:nth-child(1),
             & span:nth-child(4) {
                 opacity: 0;
@@ -66,10 +98,12 @@
     .menu {
         padding: 0;
         width: 100%;
+        border-radius: 20px;
         background-color: #fff;
         z-index: 11;
         position: relative;
         text-align: center;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, .2);
         transition: all .5s ease-out;
         transform: translateY(-300px);
         &--active {
@@ -84,10 +118,41 @@
         &__list-link {
             display: block;
             padding: 15px 0;
+            margin-bottom: 4px;
             border-radius: 20px;
+            transition: all .6s ease-in;
             &:hover {
                 box-shadow: 0 0 5px rgba(0, 0, 0, .4);
             }
+            &--active::after {
+                bottom: 9px;
+                left: 0;
+                right: 0;
+                width: 100px;
+                margin: 0 auto;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+                border-right: 50%;
+            }
+        }
+    }
+}
+//
+@media (max-width: 380px) {
+    .footer {
+        &__inner {
+            justify-content: space-between;
+        }
+        &__social {
+            margin-left: 0;
+        }
+        &__form {
+            display: block;
+        }
+        &__form-btn {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 10px;
+            border: 1px solid $title;
         }
     }
 }
