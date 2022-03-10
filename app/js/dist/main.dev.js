@@ -1,7 +1,7 @@
 "use strict";
 
 $(function () {
-  //burger
+  //rightside-menu
   var openBtn = $('.header__btn');
   var closeBtn = $('.rightside-menu__close');
   var burgerMenu = $('.rightside-menu');
@@ -51,5 +51,10 @@ $(function () {
       filter: '.category-bedroom' //default active tab
 
     }
+  }); //burger
+
+  $('.header__btn-menu').on('click', function () {
+    $('.menu').toggleClass('menu--active');
+    $('.header__btn-menu').toggleClass('header__btn-menu--active');
   });
 });
