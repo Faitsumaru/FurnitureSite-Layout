@@ -38,7 +38,59 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 5000,
         slidesToShow: 10,
-        slidesToScroll: 5
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1700,
+                settings: {
+                    slidesToShow: 8,
+                    slidesToScroll: 8,
+                }
+            },
+            {
+                breakpoint: 1511,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                }
+            },
+            {
+                breakpoint: 1180,
+                settings: {
+                    slidesToShow: 5,
+                    slidesToScroll: 5,
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 760,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: false
+                }
+            },
+        ]
     });
     var contactSliderItem = $('.contact__slider-item');
     contactSliderItem.css('width', '170px');
