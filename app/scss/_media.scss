@@ -23,6 +23,44 @@
         }
     }
 }
+@media (max-width: 1030px) {
+    .blog {
+        &__inner {
+            flex-wrap: wrap;
+            justify-content: center;
+        } 
+        .aside {
+            width: 100%;
+            order: -1;
+            padding: 0 75px;
+            margin-bottom: 45px;
+            margin-left: 0;
+            &__search {
+                margin-bottom: 20px;
+            }
+        }
+        &__items {
+            max-width: 100%;
+        }
+        &__item-img {
+            max-width: 100%;
+            width: 100%;
+        }
+        &__category {
+            margin-bottom: 15px;
+        }
+        &__posts {
+            margin-bottom: 15px;
+            max-width: 400px;
+        }
+        &__posts-title {
+            margin-bottom: 10px;
+        }
+        &__tags {
+            padding-bottom: 15px;
+        }
+    }
+}
 @media (max-width: 990px) {
     .footer {
         &__info {
@@ -145,6 +183,35 @@
     .blog-box__item-title {
         font-size: 17px;
         line-height: 22px;   
+    }
+    .blog {
+        padding: 20px 0 20px;
+        .aside {
+            padding: 0 10px;
+        }
+        &__social-list {
+            margin: 0 auto;
+            width: 400px;
+        }
+        &__tags > a {
+            display: flex;
+            justify-content: center;
+            max-width: 300px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+        &__tags-title {
+            margin-bottom: 5px;
+        }
+        &__item {
+            margin-bottom: 40px;
+            &-info {
+                padding: 5px 0 5px;
+            }
+            &-text {
+                padding-bottom: 25px;
+            }
+        }
     }
 }
 @media (max-width: 650px) {
@@ -445,6 +512,29 @@
         }
         &__name {
             margin-bottom: 10px;
+        }
+    }
+    .blog {
+        &__posts-date,
+        &__posts-author {
+            font-size: 11px;
+            line-height: 5px;
+        }
+        &__social-list {
+            width: 100%;
+            max-width: 100%;
+        }
+        &__blockquote {
+            padding: 35px 15px;
+            & span {
+                font-size: 22px;
+                line-height: 33px;
+                padding-bottom: 13px;
+                margin-bottom: 13px;
+                &::after {
+                    width: 125px;
+                }
+            }
         }
     }
 }
