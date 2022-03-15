@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # **_Desire Furniture Site_**
 
 ## About
@@ -28,4 +27,3 @@ __GitHub Pages:__ https://faitsumaru.github.io/FurnitureSite-Layout/app/index.ht
 * Color Picker: https://www.w3schools.com/colors/colors_picker.asp;
 =======
 # **Furniture Site**
->>>>>>> f5eb2bbeeb35370287b7bb0f4f58256b3e7b9946
