@@ -1,7 +1,7 @@
 # **_Desire Furniture Site_**
 
 ## About
-It is a multi page site (made with toolkit manager - *_GULP_*, _HTML_, _SCSS_ & _JS (jQuery)_) + Responsive and Grid layout.
+It is a multi page site [made with toolkit manager - *_GULP_*, _HTML_, _SCSS_ & _JS_ (_jQuery_)] + Responsive and Grid layout.
 
 > version: Mar. 2022, created by Gleb 'Faitsuma' Kiryakov
 
@@ -10,8 +10,8 @@ __GitHub Pages:__ https://faitsumaru.github.io/FurnitureSite-Layout/app/index.ht
 ## Documentation
 * Google Fonts: https://fonts.google.com/;
 * Gulp: 
-    * https://gulpjs.com/docs/en/getting-started/quick-start
-    * http://www.creative-seo.ru/blog/gulp-dlya-nachinayushchih/
+    * https://gulpjs.com/docs/en/getting-started/quick-start;
+    * http://www.creative-seo.ru/blog/gulp-dlya-nachinayushchih/;
 * SCSS / SASS: https://sass-scss.ru/documentation/;
 * Slider: 
     * https://kenwheeler.github.io/slick/;
@@ -25,5 +25,3 @@ __GitHub Pages:__ https://faitsumaru.github.io/FurnitureSite-Layout/app/index.ht
     * https://developer.mozilla.org/ru/docs/Web;
     * http://htmlbook.ru/;
 * Color Picker: https://www.w3schools.com/colors/colors_picker.asp;
-=======
-# **Furniture Site**
