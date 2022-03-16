@@ -8,20 +8,20 @@ It is a multi page site [made with toolkit manager - *_GULP_*, _HTML_, _SCSS_ & 
 __GitHub Pages:__ https://faitsumaru.github.io/FurnitureSite-Layout/app/index.html
 
 ## Documentation
-* Google Fonts: https://fonts.google.com/;
+* Google Fonts: https://fonts.google.com;
 * Gulp: 
     * https://gulpjs.com/docs/en/getting-started/quick-start;
-    * http://www.creative-seo.ru/blog/gulp-dlya-nachinayushchih/;
-* SCSS / SASS: https://sass-scss.ru/documentation/;
+    * http://www.creative-seo.ru/blog/gulp-dlya-nachinayushchih;
+* SCSS / SASS: https://sass-scss.ru/documentation;
 * Slider: 
-    * https://kenwheeler.github.io/slick/;
+    * https://kenwheeler.github.io/slick;
     * https://swiperjs.com/demos;
-* MixItUp: https://www.kunkalabs.com/tutorials/category/mixitup/;
+* MixItUp: https://www.kunkalabs.com/tutorials/category/mixitup;
 * jQuery: 
-    * https://api.jquery.com/;
+    * https://api.jquery.com;
     * https://www.w3schools.com/jquery/default.asp;
 * Git: https://githowto.com/ru;
 * Web Technologies: 
     * https://developer.mozilla.org/ru/docs/Web;
-    * http://htmlbook.ru/;
+    * http://htmlbook.ru;
 * Color Picker: https://www.w3schools.com/colors/colors_picker.asp;
